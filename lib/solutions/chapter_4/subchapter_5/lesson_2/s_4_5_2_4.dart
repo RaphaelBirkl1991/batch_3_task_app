@@ -1,9 +1,34 @@
 import 'package:flutter/material.dart';
 
-class S4524 extends StatelessWidget {
-  const S4524({Key? key}) : super(key: key);
+class ShowHideNameWidget extends StatefulWidget {
+  const ShowHideNameWidget({super.key});
+
+  @override
+  State<ShowHideNameWidget> createState() => _ShowHideNameWidgetState();
+}
+
+class _ShowHideNameWidgetState extends State<ShowHideNameWidget> {
+  String name = "";
+  String btnText = "Name anzeigen";
+
   @override
   Widget build(BuildContext context) {
-    throw UnimplementedError();
+    return Column(children: [
+      Text(name),
+      ElevatedButton(
+        onPressed: () {
+          setState(() {
+            if (name == "") {
+              name = "Raphael";
+              btnText = "Name verstecken";
+            } else {
+              name = "";
+              btnText = "Name anzeigen";
+            }
+          });
+        },
+        child: Text(btnText),
+      )
+    ]);
   }
 }

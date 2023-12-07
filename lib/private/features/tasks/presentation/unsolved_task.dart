@@ -7,7 +7,7 @@ class UnsolvedTask extends StatelessWidget {
     return Center(
         child: Column(
       children: [
-        Text("Noch kein Lösung vorhanden 😞",
+        Text("Noch kein Lösung vorhanden :)",
             style: Theme.of(context).textTheme.titleMedium),
         Image.asset('assets/images/polar_empty.png'),
       ],

@@ -1,14 +1,15 @@
 import 'package:task_app/private/features/tasks/data/tasks.dart';
 import 'package:task_app/private/features/tasks/models/task.dart';
+import 'package:task_app/solutions/solutions.dart';
 
 const List<Task> chapter3TaskList = [
   Task(
     taskModel: t_3_3_8_1,
-    // solution: S3381(),
+    solution: S3381(),
   ),
   Task(
     taskModel: t_3_3_8_2,
-    // solution: S3382(),
+    solution: S3382(),
   ),
   Task(
     taskModel: t_3_3_8_3,
@@ -38,23 +39,20 @@ const List<Task> chapter3TaskList = [
 const List<Task> chapter4TaskList = [
   Task(
     taskModel: t_4_5_1_1,
-    //solution: S4511(),
+    solution: S4511(),
   ),
   Task(
     taskModel: t_4_5_2_1,
-    //solution: S4521(),
+    solution: S4521(),
   ),
   Task(
     taskModel: t_4_5_2_2,
-    // solution: S4522(),
+    solution: MyStatelessWidget(),
   ),
-  Task(
-    taskModel: t_4_5_2_3,
-    // solution: S4523(),
-  ),
+  Task(taskModel: t_4_5_2_3, solution: MyNameWidget()),
   Task(
     taskModel: t_4_5_2_4,
-    // solution: S4524(),
+    solution: ShowHideNameWidget(),
   ),
   Task(
     taskModel: t_4_5_3_1,
