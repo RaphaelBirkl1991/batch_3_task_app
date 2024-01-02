@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
 
 FormattedTime formatSeconds(int seconds) {
-  // Lösung hier einfügen
+  // int hours = seconds % 3600;
+  // int minutes = seconds % 60;
+  // int remMinutes = 0;
+
+  // if (hours != 0) {
+  //   remMinutes = (seconds - (hours * 3600)) % 60;
+  //   minutes = remMinutes;
+
+  // }
   throw UnimplementedError();
 }
 

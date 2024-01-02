@@ -1,18 +1,20 @@
 import 'package:flutter/material.dart';
 
 bool isPalindrome(String input) {
-  // Lösung hier einfügen
-  throw UnimplementedError();
+  input = input.toLowerCase();
+  List<String> revList = input.split('');
+  String revInput = revList.reversed.join();
+  return input == revInput;
 }
 
-class S3385 extends StatefulWidget {
-  const S3385({Key? key}) : super(key: key);
+class Pallindrome extends StatefulWidget {
+  const Pallindrome({Key? key}) : super(key: key);
 
   @override
-  State<S3385> createState() => _S3385State();
+  State<Pallindrome> createState() => _S3385State();
 }
 
-class _S3385State extends State<S3385> {
+class _S3385State extends State<Pallindrome> {
   final TextEditingController _inputController = TextEditingController();
   String? output;
 

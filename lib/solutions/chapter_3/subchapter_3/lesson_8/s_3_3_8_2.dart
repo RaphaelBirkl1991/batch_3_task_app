@@ -1,8 +1,23 @@
 import 'package:flutter/material.dart';
 
 bool isPrime(int input) {
-  // Lösung hier einfügen
-  throw UnimplementedError();
+  bool isGreaterOne = input > 1 ? true : false;
+  bool isDividablByMidNumb = false;
+  bool isPrimeNumber;
+
+  for (int i = 2; i <= input - 1; i++) {
+    if (input % i == 0) {
+      isDividablByMidNumb = true;
+      break;
+    }
+  }
+
+  if (isGreaterOne && !isDividablByMidNumb) {
+    isPrimeNumber = true;
+  } else {
+    isPrimeNumber = false;
+  }
+  return isPrimeNumber;
 }
 
 class S3382 extends StatefulWidget {
