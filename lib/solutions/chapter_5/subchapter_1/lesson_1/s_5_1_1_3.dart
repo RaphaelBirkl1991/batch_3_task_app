@@ -4,7 +4,7 @@ class S5113 extends StatelessWidget {
   const S5113({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    throw UnimplementedError();
+    return CustomMaterialButton();
   }
 }
 
@@ -13,6 +13,15 @@ class CustomMaterialButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    throw UnimplementedError();
+    final ButtonStyle style =
+        ElevatedButton.styleFrom(textStyle: const TextStyle(fontSize: 20));
+
+    return Container(
+      child: ElevatedButton(
+        style: style,
+        onPressed: () {},
+        child: const Text('click me'),
+      ),
+    );
   }
 }
